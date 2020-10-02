@@ -1,11 +1,12 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import Auxi from '../../hoc/Auxi';
+import Burger from '../../components/Burger/Burger';
 
  class BurgerPreparateur extends Component {
      render () {
          return (
              <Auxi>
-                 <div>Burger</div>
+                 <Burger />
                  <div>Construire des controles</div>
              </Auxi>
          );
