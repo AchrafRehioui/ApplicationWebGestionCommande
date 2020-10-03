@@ -3,10 +3,21 @@ import Auxi from '../../hoc/Auxi';
 import Burger from '../../components/Burger/Burger';
 
  class BurgerPreparateur extends Component {
-     render () {
+    
+    state = {
+
+        ingredients: {
+            salade: 1,
+            bacon: 1,
+            fromage: 2,
+            viande: 2
+        }
+
+    }
+    render () {
          return (
              <Auxi>
-                 <Burger />
+                 <Burger ingredients={this.state.ingredients}/>
                  <div>Construire des controles</div>
              </Auxi>
          );
